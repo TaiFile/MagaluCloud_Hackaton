@@ -39,7 +39,7 @@ export function DatabaseForm({ title }: ProductForm) {
       <RadioGroup
         control={control}
         trigger={trigger}
-        name="operationSystem"
+        name="database"
         label="Sistema Operacional"
         options={[{ value: database.MySQL, label: "MySQL" }]}
       />
@@ -47,7 +47,7 @@ export function DatabaseForm({ title }: ProductForm) {
         <RadioGroup
           control={control}
           trigger={trigger}
-          name="operationSystem"
+          name="size"
           label="Banco de dados"
           options={[
             { value: size.Small, label: "Small" },
