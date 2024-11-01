@@ -29,12 +29,12 @@ export function ObjectStorageForm({ title }: ProductForm) {
   });
 
   return (
-    <div className="bg-[#26283C] flex flex-col gap-7 h-60 p-5">
+    <div className="bg-[#26283C] flex flex-col gap-7 h-80 p-5">
       <h2 className="text-white">{title}</h2>
       <RadioGroup
         control={control}
         trigger={trigger}
-        name="operationSystem"
+        name="profile"
         label="Sistema Operacional"
         options={[
           { value: profile.Private, label: "Private" },
