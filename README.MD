@@ -1,4 +1,5 @@
 # SECOMP Hackathon 2024 🚀
+Link do Figma: https://www.figma.com/design/Jes665RWSRxF1ybWFcoelP/MagaluCloud?node-id=0-1&t=bff6B5z9Kv4ecHix-1
 
 ## 📍 Sobre o Evento
 
