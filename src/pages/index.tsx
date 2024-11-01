@@ -2,7 +2,12 @@ import { useState } from "react";
 import Button from "@/components/Button";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
-import { ProductForm } from "@/components/ProductForm";
+import {
+  ProductForm,
+  VirtualMachineForm,
+} from "@/components/VirtualMachineForm";
+import { DatabaseForm } from "@/components/DatabaseForm";
+import { ObjectStorageForm } from "@/components/ObjectStore";
 
 export default function Home() {
   const [selectedTemplates, setSelectedTemplates] = useState<string[]>([]);
@@ -62,44 +67,56 @@ export default function Home() {
       <div
         className={`flex justify-between gap-32 transition-all ease-in-out duration-200 mt-20`}
       >
-        <Button
-          size="big"
-          type="button"
-          filled={selectedTemplates.includes("virtual-machine")}
-          onClick={() => handleButtonClick("virtual-machine")}
-        >
-          <div className="flex justify-center items-center gap-2">
-            <img src="/computer.svg" alt="" />
-            Virtual Machine
-          </div>
-        </Button>
-        {selectedTemplates.includes("virtual-machine") && (
-          <ProductForm title={"System Operation"}></ProductForm>
-        )}
-        <Button
-          size="big"
-          type="button"
-          filled={selectedTemplates.includes("database")}
-          onClick={() => handleButtonClick("database")}
-        >
-          <div className="flex justify-center items-center gap-2">
-            <img src="/db.svg" alt="" />
-            Banco de dados
-          </div>
-        </Button>
-        <Button
-          size="big"
-          type="button"
-          filled={selectedTemplates.includes("object-storage")}
-          onClick={() => handleButtonClick("object-storage")}
-        >
-          <div className="flex justify-center items-center gap-2">
-            <img src="/profile.svg" alt="" />
-            Object Storage
-          </div>
-        </Button>
+        <div className="flex flex-col gap-2">
+          <Button
+            size="big"
+            type="button"
+            filled={selectedTemplates.includes("virtual-machine")}
+            onClick={() => handleButtonClick("virtual-machine")}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <img src="/computer.svg" alt="" />
+              Virtual Machine
+            </div>
+          </Button>
+          {selectedTemplates.includes("virtual-machine") && (
+            <VirtualMachineForm title={"System Operation"}></VirtualMachineForm>
+          )}
+        </div>
+        <div className="flex flex-col gap-2">
+          <Button
+            size="big"
+            type="button"
+            filled={selectedTemplates.includes("database")}
+            onClick={() => handleButtonClick("database")}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <img src="/db.svg" alt="" />
+              Banco de dados
+            </div>
+          </Button>
+          {selectedTemplates.includes("database") && (
+            <DatabaseForm title={"System Operation"}></DatabaseForm>
+          )}
+        </div>
+        <div className="flex flex-col gap-2">
+          <Button
+            size="big"
+            type="button"
+            filled={selectedTemplates.includes("object-storage")}
+            onClick={() => handleButtonClick("object-storage")}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <img src="/profile.svg" alt="" />
+              Object Storage
+            </div>
+          </Button>
+          {selectedTemplates.includes("object-storage") && (
+            <ObjectStorageForm title={"Object Strorage"}></ObjectStorageForm>
+          )}
+        </div>
       </div>
-      <div className={`${selectedTemplates.length == 0 ? "mt-28" : "mt-80"} `}>
+      <div className={`${selectedTemplates.length == 0 ? "mt-28" : "mt-24"} `}>
         <Button size="big" type="button" onClick={handleGenerateClick}>
           Gerar
         </Button>
