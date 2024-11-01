@@ -1,6 +1,7 @@
 # MagaluCloud Hackathon 2024 🚀
 Link do Figma: [MagaluCloud no Figma](https://www.figma.com/design/Jes665RWSRxF1ybWFcoelP/MagaluCloud?node-id=0-1&t=bff6B5z9Kv4ecHix-1) </br>
 Link de Documento: [Google Documents](https://docs.google.com/document/d/1F9ofR5Lvt9mHvqCwviz7vtXMEZ4O_UbFgcHG7lhTuBY/edit?tab=t.0)
+Link do Protótipo: [Deploy](https://br-se1.magaluobjects.com/miranha-hacka/index.html)
 
 ## 📍 Sobre o Evento
 
