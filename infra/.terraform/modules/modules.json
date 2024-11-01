@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"vm","Source":"./vm","Dir":"vm"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"object-storage","Source":"./object-storage","Dir":"object-storage"},{"Key":"vm","Source":"./vm","Dir":"vm"}]}
