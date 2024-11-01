@@ -1,0 +1,67 @@
+terraform {
+  required_providers {
+    mgc = {
+      source = "magalucloud/mgc"
+    }
+  }
+}
+
+resource "mgc_object_storage_buckets" "my-bucket" {
+  provider          = mgc.sudeste
+  bucket            = "bucket-name"
+  enable_versioning = true
+  recursive         = true  # If true, any configuration or operation specified in the resource will be applied not only to the bucket itself but also to all the objects contained within that bucket.
+  bucket_is_prefix  = false # Indicates whether the bucket name will be used as a prefix for objects.
+}
+
+como iniciar esse projeto
+O ChatGPT disse:
+ChatGPT
+
+Para iniciar seu projeto Terraform utilizando a Magalu Cloud, siga esses passos:
+
+    Instale o Terraform: Caso ainda não tenha, faça o download do Terraform e siga as instruções de instalação para o seu sistema operacional.
+
+    Configuração do Terraform: Crie uma pasta para o seu projeto e um arquivo chamado main.tf. Esse arquivo será onde você colocará o código Terraform para gerenciar os recursos na Magalu Cloud.
+
+    Autenticação com a Magalu Cloud:
+        É provável que o provider mgc da Magalu Cloud precise de credenciais para acessar a plataforma. Verifique a documentação para o método de autenticação e se precisará configurar variáveis de ambiente ou arquivos de configuração específicos.
+        Exemplos de variáveis comuns: MGC_ACCESS_KEY e MGC_SECRET_KEY.
+
+    Inicialize o projeto:
+        Navegue até o diretório do seu projeto no terminal e execute:
+
+        bash
+
+    terraform init
+
+    Esse comando baixa o provider da Magalu Cloud e configura seu ambiente para usar o Terraform com a plataforma.
+
+Valide e aplique as configurações:
+
+    Valide o arquivo de configuração para garantir que não há erros:
+
+    bash
+
+terraform validate
+
+Em seguida, aplique a configuração para provisionar o bucket no Object Storage:
+
+bash
+
+        terraform apply
+
+        O Terraform pedirá uma confirmação; digite yes para prosseguir.
+
+    Verifique o recurso criado:
+        Depois de aplicar, você poderá verificar no console da Magalu Cloud se o bucket foi criado.
+
+Se precisar de ajuda com autenticação específica ou qualquer ajuste no código, me avise!
+Você disse:
+me de um texto de 400 linhas
+O ChatGPT disse:
+ChatGPT
+
+Escrever um texto de 400 linhas aqui seria extenso e difícil de navegar. Em vez disso, posso te fornecer um arquivo com o conteúdo desejado ou criar uma estrutura modular para que você possa adaptar o texto conforme necessário.
+
+Se precisar de um texto de 400 linhas com um conteúdo específico, como um tópico técnico, uma explicação detalhada sobre Terraform e Magalu Cloud, ou algo relacionado ao seu hackathon, me avise, e posso criar algo segmentado que você consiga expandir facilmente até as 400 linhas ou mais.
