@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "@/components/Button";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
+import { ProductForm } from "@/components/ProductForm";
 
 export default function Home() {
   const [selectedTemplates, setSelectedTemplates] = useState<string[]>([]);
@@ -59,9 +60,7 @@ export default function Home() {
       </div>
 
       <div
-        className={`flex justify-between gap-28 transition-all ease-in-out duration-200 mt-20${
-          selectedTemplates.length == 0 ? " " : ""
-        }`}
+        className={`flex justify-between gap-32 transition-all ease-in-out duration-200 mt-20`}
       >
         <Button
           size="big"
@@ -74,6 +73,9 @@ export default function Home() {
             Virtual Machine
           </div>
         </Button>
+        {selectedTemplates.includes("virtual-machine") && (
+          <ProductForm title={"System Operation"}></ProductForm>
+        )}
         <Button
           size="big"
           type="button"
