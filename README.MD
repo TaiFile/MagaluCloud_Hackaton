@@ -1,47 +1,46 @@
-# SECOMP Hackathon 2024 🚀
-Link do Figma: https://www.figma.com/design/Jes665RWSRxF1ybWFcoelP/MagaluCloud?node-id=0-1&t=bff6B5z9Kv4ecHix-1
+# MagaluCloud Hackathon 2024 🚀
+Link do Figma: [MagaluCloud no Figma](https://www.figma.com/design/Jes665RWSRxF1ybWFcoelP/MagaluCloud?node-id=0-1&t=bff6B5z9Kv4ecHix-1)
 
 ## 📍 Sobre o Evento
 
-Hackathon realizado pela **SECOMP** em parceria com a **Magalu Cloud** no campus da UFSCar São Carlos. Com foco em soluções reais e inovação tecnológica, participantes tiveram 24 horas para desenvolver projetos que usassem tecnologia em nuvem, aprendizado de máquina e desenvolvimento web/mobile.
+Hackathon realizado pela **SECOMP** em parceria com a **Magalu Cloud** no campus da UFSCar São Carlos. Com foco em soluções reais e inovação tecnológica, participantes tiveram 9 horas para desenvolver projetos que usassem tecnologia em nuvem e principalmente infraestrutura com **Terraform**.
 
-- **Local:** UFSCar São Carlos
-- **Data:** [Data do Hackathon, ex: 12-13 de Setembro de 2024]
-- **Duração:** 24 horas contínuas
+- **Local:** UFSCar São Carlos, Departamento de Computação
+- **Data:** 31/10/2024
+- **Duração:** 9 horas
 
 ## 🎯 Objetivo
 
-Desenvolver soluções inovadoras e de impacto para três desafios principais:
+Desenvolver soluções inovadoras para o seguinte tema:
 
-1. **Otimização do E-commerce**
-2. **Soluções para Varejo Inteligente**
-3. **Sustentabilidade e Impacto Social**
+**Tema:** Desenvolver uma aplicação que permita configurar uma infraestrutura com Terraform baseada nas opções personalizadas do usuário.
+
+### Desafios
+1. **Entender a estrutura e componentes do Terraform**
+2. **Conseguir fazer o deploy do projeto**
+3. **Desenvolver o frontend da aplicação**
 
 ## 🏆 Desafios e Tecnologia
 
 Os participantes foram incentivados a usar o **Magalu Cloud** e tecnologias de ponta, incluindo:
 
 - **Terraform** para provisionamento de infraestrutura na nuvem.
-- **Front-end:** React, Vue.js, Angular
-- **Back-end:** Node.js, Python (Flask/Django)
-- **Banco de Dados:** PostgreSQL, MongoDB, Firebase
-- **APIs:** Restful APIs, GraphQL
+- **Front-end:** React
 
-## 📅 Cronograma
-
-- **Abertura e Introdução**
-- **Desenvolvimento do Projeto** com mentoria da Magalu Cloud e SECOMP
-- **Entrega e Apresentação Final** para uma banca de especialistas
-- **Premiação e Encerramento**
-
-## 🏅 Premiações
-
-1. **Primeiro Lugar:**
-   - R$3.000,00 em prêmios
-   - Créditos de R$3.000,00 na Magalu Cloud
 
 ## 🎉 Conclusão
 
-O SECOMP Hackathon 2024 promoveu inovação e colaboração, com soluções que impactam o mercado e a sociedade. Agradecemos à **Magalu Cloud** pelo apoio e aos participantes pelo empenho!
+O MagaluCloud Hackathon 2024 foi uma experiência extremamente válida e desafiadora para nosso grupo. Ao aceitar o desafio, entramos no hackathon sem conhecimento prévio sobre infraestrutura e computação em nuvem, especialmente sobre MagaluCloud e Terraform, que eram os temas centrais. Enfrentar esse desafio e aprender em tempo real foi enriquecedor e nos trouxe grande satisfação.
 
----
+Acreditamos que essa experiência será valiosa em nossas trajetórias, pois em um curto período de tempo adquirimos um entendimento sobre computação em nuvem. Além disso, graças à MagaluCloud e à sua equipe de apoio, tivemos suporte constante e a oportunidade de dialogar com especialistas sobre diversos tópicos da área. Essa vivência certamente ampliou nossos horizontes e fortaleceu nossas habilidades para futuros projetos.
+
+## 👥 Integrantes do Projeto
+
+Nosso time trabalhou em conjunto para enfrentar os desafios do **MagaluCloud Hackathon 2024**. Sobre nossa equipe:
+
+- **TaiFile** 
+- **decker12w** 
+- **edu_malagutti** 
+- **jvolima**
+
+Estamos orgulhosos do trabalho realizado e gratos pela experiência enriquecedora proporcionada pela SECOMP e MagaluCloud. Este hackathon foi um marco em nossa jornada e nos trouxe novos conhecimentos e conexões na área de computação em nuvem.
