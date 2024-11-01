@@ -2,8 +2,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import RadioGroup from "./RadioGroup";
 import { z } from "zod";
-import { OperatingSystem } from "./VirtualMachineForm";
-import { SiZebpay } from "react-icons/si";
 
 export interface ProductForm {
   title: string;
@@ -42,7 +40,7 @@ export function DatabaseForm({ title }: ProductForm) {
       <RadioGroup
         control={control}
         trigger={trigger}
-        name="operationSystem"
+        name="database"
         label="Sistema Operacional"
         options={[{ value: database.MySQL, label: "MySQL" }]}
       />
@@ -50,7 +48,7 @@ export function DatabaseForm({ title }: ProductForm) {
         <RadioGroup
           control={control}
           trigger={trigger}
-          name="operationSystem"
+          name="size"
           label="Banco de dados"
           options={[
             { value: size.Small, label: "Small" },

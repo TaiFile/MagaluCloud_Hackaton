@@ -35,7 +35,7 @@ export function ObjectStorageForm({ title }: ProductForm) {
       <RadioGroup
         control={control}
         trigger={trigger}
-        name="operationSystem"
+        name="profile"
         label="Sistema Operacional"
         options={[
           { value: profile.Private, label: "Private" },
