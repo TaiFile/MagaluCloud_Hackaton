@@ -33,7 +33,9 @@ export default function Home() {
     <div
       className={`bg-[#202647] flex flex-col items-center w-screen min-h-screen font-[family-name:var(--font-geist-sans)]`}
     >
-      <header className="w-full flex bg-[#14151E] justify-between items-center">
+      <header
+        className={`w-full flex bg-[#14151E] justify-between items-center`}
+      >
         <div className="flex justify-center items-center">
           <p className="text-white text-xl m-5">SpiderCode</p>
           <img className="size-8" src="/cloud.svg" alt="" />
@@ -41,7 +43,13 @@ export default function Home() {
 
         <img src="/terraform.svg" className="size-24" alt="" />
       </header>
-      <div className="text-white flex flex-col justify-center items-center mt-32 gap-5">
+      <div
+        className={`text-white flex flex-col justify-center items-center mt-32 gap-5 transition-all ease-in-out duration-200 ${
+          selectedTemplates.length == 0
+            ? ""
+            : "-translate-y-16 opacity-0 hidden"
+        }`}
+      >
         <h1 className="text-3xl font-bold">Generate your Terraform code</h1>
         <p className="text-base">
           Select the essential products to build your infrastructure: Virtual
@@ -50,7 +58,11 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex justify-between gap-28 mt-20">
+      <div
+        className={`flex justify-between gap-28 transition-all ease-in-out duration-200 mt-20${
+          selectedTemplates.length == 0 ? " " : ""
+        }`}
+      >
         <Button
           size="big"
           type="button"
@@ -85,7 +97,7 @@ export default function Home() {
           </div>
         </Button>
       </div>
-      <div className="mt-28">
+      <div className={`${selectedTemplates.length == 0 ? "mt-28" : "mt-80"} `}>
         <Button size="big" type="button" onClick={handleGenerateClick}>
           Gerar
         </Button>
