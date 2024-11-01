@@ -38,9 +38,10 @@ Acreditamos que essa experiência será valiosa em nossas trajetórias, pois em 
 
 Nosso time trabalhou em conjunto para enfrentar os desafios do **MagaluCloud Hackathon 2024**. Sobre nossa equipe:
 
-- **TaiFile** 
-- **decker12w** 
-- **edu_malagutti** 
-- **jvolima**
+- [**TaiFile**](https://www.linkedin.com/in/vitor-taichi-taira-02416b259/)
+- [**decker12w**](https://www.linkedin.com/in/jos%C3%A9-maia-1b28711b4/)
+- [**edu_malagutti**](https://www.linkedin.com/in/eduardo-malagutti-177679226/)
+- [**jvolima**](https://www.linkedin.com/in/jvolima/)
 
 Estamos orgulhosos do trabalho realizado e gratos pela experiência enriquecedora proporcionada pela SECOMP e MagaluCloud. Este hackathon foi um marco em nossa jornada e nos trouxe novos conhecimentos e conexões na área de computação em nuvem.
+
